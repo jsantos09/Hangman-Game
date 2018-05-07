@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto|Skranji" rel="stylesheet">
+</head>
+
+<body style="background-image: url(./assets/images/dark-grey-terrazzo.png)">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark " style="width: 96%; margin-left: 2%; font-size: ">
+        <a class="navbar-brand" href="#">Juan Santos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Other Projects</a>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="width: 95%">
+        <div class="row" style="margin-top: 3%">
+            <div class="col-md-3">
+                <img src="./assets/images/chemistry.png" alt="chemImg" style="width: 80%; background-color: white; padding: 1%">
+            </div>
+            <div class="col-md-6">
+                <h1 class="bg-primary text-white" style="font-family: 'Montserrat', sans-serif; font-weight: bolder">Welcome to hangman.</h1>
+            </div>
+            <div class="col-md-3">
+                <img src="./assets/images/astronomy.jpeg" alt="astronomyImg" style="width: 60%; background-color: white; padding: 1%">
+            </div>
+        </div>
+
+        <div class="row" id="instruction" style="margin-top: 2%">
+            <p>
+                <span class="text-white bg-success" style="line-height: 120%; font-size: 25px; font-family: 'Roboto', sans-serif;">Press any key to begin</span>
+            </p>
+        </div>
+
+        <div class="row">
+            <p>
+                <span class="alert-line text-white" style="font-size: 30px; font-family: 'Roboto', sans-serif;"></span>
+
+            </p>
+        </div>
+
+
+        <div class="row">
+            <div id="word-display">
+                <p class="text-white" id="display-letters" style="font-size: 30px; font-family: 'Roboto', sans-serif"></p>
+            </div>
+        </div>
+        <div class="row">
+            <p class="bg-dark text-white" style="font-size: 24px; font-family: 'Roboto', sans-serif">Guessed Leters</p>
+        </div>
+
+        <div class="row">
+            <p>
+                <span class="bg-dark text-white" id="guessed-letters" style="font-size: 20px; font-family: 'Roboto', sans-serif"> </span>
+            </p>
+        </div>
+        <p class="bg-info text-white" style="font-size: 27px; font-family: 'Roboto', sans-serif">Stats</p>
+        <p class="bg-dark text-white" style="font-size: 20px; font-family: 'Roboto', sans-serif">Incorrect Letters:
+            <span id="error-count"></span>
+        </p>
+        <p class="bg-dark text-white" style="font-size: 20px; font-family: 'Roboto', sans-serif">Wins:
+            <span id="win-count"></span>
+        </p>
+        <p class="bg-dark text-white" style="font-size: 20px; font-family: 'Roboto', sans-serif">Losses:
+            <span id="loss-count"></span>
+        </p>
+    </div>
+
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+</body>
+
+</html>
